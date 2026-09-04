@@ -1,0 +1,34 @@
+{
+    "version": "@moonshot-ai/kimi-code@0.40.1",
+    "description": "Kimi Code CLI — The Starting Point for Next-Gen Agents",
+    "homepage": "https://github.com/MoonshotAI/kimi-code/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/MoonshotAI/kimi-code/releases/download/%40moonshot-ai%2Fkimi-code%400.40.1/kimi-code-win32-x64.zip",
+            "hash": "a5565d7aa8bfdb296a91b0876893d3846a31d171adc07abc4b8fb331cee6e53c"
+        },
+        "arm64": {
+            "url": "https://github.com/MoonshotAI/kimi-code/releases/download/%40moonshot-ai%2Fkimi-code%400.40.1/kimi-code-win32-arm64.zip",
+            "hash": "439a6211127247388e8eb65a112e16dcccc0635bae9ebfa8cb6b91b18b9273b8"
+        }
+    },
+    "extract_dir": "kimi",
+    "bin": "kimi.exe",
+    "checkver": {
+        "github": "https://github.com/MoonshotAI/kimi-code"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/MoonshotAI/kimi-code/releases/download/$version/kimi-code-win32-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/MoonshotAI/kimi-code/releases/download/$version/kimi-code-win32-arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
