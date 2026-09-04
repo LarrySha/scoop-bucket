@@ -13,7 +13,6 @@
             "hash": "439a6211127247388e8eb65a112e16dcccc0635bae9ebfa8cb6b91b18b9273b8"
         }
     },
-    "extract_dir": "kimi",
     "bin": "kimi.exe",
     "checkver": {
         "github": "https://github.com/MoonshotAI/kimi-code",
