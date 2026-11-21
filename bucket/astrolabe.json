@@ -1,0 +1,28 @@
+{
+    "version": "0.17.10",
+    "description": "Local MCP server that gives Claude Code, Cursor and Codex fast code search, symbol lookup and reference navigation (single Rust binary, tree-sitter indexing + on-demand language servers).",
+    "homepage": "https://github.com/wojiushirencai/Astrolabe",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/wojiushirencai/Astrolabe/blob/main/LICENSE-MIT"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/wojiushirencai/Astrolabe/releases/download/v0.17.10/astrolabe-0.17.10-x86_64-pc-windows-msvc.zip",
+            "hash": "REPLACE_WITH_SHA256"
+        }
+    },
+    "bin": "astrolabe.exe",
+    "checkver": {
+        "github": "https://github.com/wojiushirencai/Astrolabe",
+        "regex": "/releases/tag/v?([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/wojiushirencai/Astrolabe/releases/download/v$version/astrolabe-$version-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    },
+    "post_install": "Write-Host 'Astrolabe installed. Now wire up your MCP clients (REQUIRED, otherwise agents keep using Grep/Read):'; Write-Host '  astrolabe setup --with-hooks'"
+}
