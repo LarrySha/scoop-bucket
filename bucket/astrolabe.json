@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/wojiushirencai/Astrolabe/releases/download/v0.17.10/astrolabe-0.17.10-x86_64-pc-windows-msvc.zip",
-            "hash": "REPLACE_WITH_SHA256"
+            "hash": "090bb71944b700ef90380796eda9225d8a1d8164f88b3a68cb752036c4a10b5b"
         }
     },
     "bin": "astrolabe.exe",
